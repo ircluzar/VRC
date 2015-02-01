@@ -1402,6 +1402,7 @@ namespace Vinesauce_ROM_Corruptor
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             // Record the save location and emulator to run.
             try
             {
@@ -1720,13 +1721,9 @@ namespace Vinesauce_ROM_Corruptor
             try
             {
                 if (RTC.RTC_RPC.args[0] == "-RTC")
-                {
-                    tabControl1.TabPages.Remove(tabPage1);
                     RTC.RTC_RPC.Plugin_Loaded(this);
-                }
             }
             catch { }
-
         }
     }
 }

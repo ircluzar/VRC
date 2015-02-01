@@ -58,6 +58,7 @@ namespace Vinesauce_ROM_Corruptor
         static void Main(string[] args)
         {
             RTC.RTC_RPC.args = args;
+
             _hookID = SetHook(_proc);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
